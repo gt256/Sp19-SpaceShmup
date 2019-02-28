@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3740807622629325542}
   - component: {fileID: 8745995689811064017}
   - component: {fileID: 4171833650523847306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CockpitL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,9 +101,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6914559934008213884}
   - component: {fileID: 3639365970364959808}
-  m_Layer: 0
+  - component: {fileID: 661191657760473305}
+  - component: {fileID: 7035411888738580695}
+  m_Layer: 9
   m_Name: _Enemy3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,6 +143,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &661191657760473305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6914559934008213885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ad2ed23ca7e4c4ca89e4041b5de223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  fireRate: 0.3
+  health: 10
+  score: 100
+--- !u!114 &7035411888738580695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6914559934008213885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8492fb8f26e4c399594172a09c5ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: -2.5
+  keepOnScreen: 0
+  isOnScreen: 1
+  camWidth: 0
+  camHeight: 0
+  offRight: 0
+  offLeft: 0
+  offUp: 0
+  offDown: 0
 --- !u!1 &6914559934961822220
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +192,7 @@ GameObject:
   - component: {fileID: 6914559934961822208}
   - component: {fileID: 6914559934961822209}
   - component: {fileID: 6914559934961822222}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +283,7 @@ GameObject:
   - component: {fileID: 6914559935097445176}
   - component: {fileID: 6914559935097445177}
   - component: {fileID: 6914559935097445158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CockpitR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

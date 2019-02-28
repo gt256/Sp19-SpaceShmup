@@ -7,7 +7,7 @@ public class Main : MonoBehaviour
 {
     static public Main S;
     [Header("Set in Inspector")]
-    public GameObject[] prefabEnemis;
+    public GameObject[] prefabEnemies;
     public float enemySpawnPerSecond = 0.5f;
     public float enemyDefaultPadding = 1.5f;
 
@@ -40,5 +40,14 @@ public class Main : MonoBehaviour
         go.transform.position = pos;
 
         Invoke("SpawnEnemy", 1f / enemySpawnPerSecond);
+    }
+
+    public void DelayedRestart(float delay)
+    {
+        Invoke("Restart", delay);
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene("_Scene_0");
     }
 }
