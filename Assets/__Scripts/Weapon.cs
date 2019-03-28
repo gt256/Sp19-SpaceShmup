@@ -45,7 +45,7 @@ using UnityEngine;
     void Start()
     {
         collar = transform.Find("Collar").gameObject;
-        collarRend = collarRend.GetComponent<Renderer>();
+        collarRend = collar.GetComponent<Renderer>();
 
         SetType(_type);
 
