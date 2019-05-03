@@ -580,6 +580,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1108049705316716629, guid: d7718c2e825144216b2d82ed73776578,
         type: 3}
+    - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
+        type: 3}
+      propertyPath: collar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1921924164509535247, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
       propertyPath: m_Layer
@@ -700,7 +705,12 @@ MonoBehaviour:
   - {fileID: 7008159461815861648, guid: 8aa5101b700ff497ebefa7e25426addd, type: 3}
   - {fileID: 6914559934008213885, guid: f317b75f55f1c466aac5035f21e28bb6, type: 3}
   - {fileID: 3888466387636642268, guid: f745414e048b14480a500d79fa343046, type: 3}
-  enemySpawnPerSecond: 1
+  - {fileID: 6914559934008213885, guid: f317b75f55f1c466aac5035f21e28bb6, type: 3}
+  - {fileID: 7008159461815861648, guid: 8aa5101b700ff497ebefa7e25426addd, type: 3}
+  - {fileID: 2580148430302014846, guid: f3162809f206c429692d790072be28ec, type: 3}
+  - {fileID: 4708429641030057454, guid: 16fa140f75e5e4eaaa153ee0fac06df9, type: 3}
+  - {fileID: 4708429641030057454, guid: 16fa140f75e5e4eaaa153ee0fac06df9, type: 3}
+  enemySpawnPerSecond: 0.5
   enemyDefaultPadding: 1.5
   weaponDefinitions:
   - type: 1
@@ -709,7 +719,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 1108049705316716629, guid: d7718c2e825144216b2d82ed73776578,
       type: 3}
     projectileColor: {r: 1, g: 1, b: 1, a: 1}
-    damageOnHit: 1
+    damageOnHit: 20
     continuousDamage: 0
     delayBetweenShots: 0.2
     velocity: 50
@@ -735,7 +745,7 @@ MonoBehaviour:
     velocity: 0
   prefabPowerUp: {fileID: 8478911855039709559, guid: 395ed26b2630e4c3da6b3848db5eedb1,
     type: 3}
-  powerUpFrequency: 01000000010000000200000006000000
+  powerUpFrequency: 01000000010000000100000006000000
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,7 +1051,7 @@ PrefabInstance:
     - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
       propertyPath: _type
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
@@ -1049,6 +1059,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1108049705316716629, guid: d7718c2e825144216b2d82ed73776578,
         type: 3}
+    - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
+        type: 3}
+      propertyPath: collar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1921924164509535247, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
       propertyPath: m_Layer
@@ -1357,6 +1372,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1108049705316716629, guid: d7718c2e825144216b2d82ed73776578,
         type: 3}
+    - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
+        type: 3}
+      propertyPath: collar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1921924164509535247, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
       propertyPath: m_Layer
@@ -1474,7 +1494,7 @@ PrefabInstance:
     - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
       propertyPath: _type
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
@@ -1482,6 +1502,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1108049705316716629, guid: d7718c2e825144216b2d82ed73776578,
         type: 3}
+    - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
+        type: 3}
+      propertyPath: collar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1921924164509535247, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
       propertyPath: m_Layer
@@ -1587,12 +1612,16 @@ PrefabInstance:
         type: 3}
       propertyPath: collar
       value: 
-      objectReference: {fileID: 1108049705316716629, guid: d7718c2e825144216b2d82ed73776578,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
       propertyPath: def.type
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861782173953415854, guid: fefcd592a214a4ff98ded4d93bcbccf7,
+        type: 3}
+      propertyPath: def.damageOnHit
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1921924164509535247, guid: fefcd592a214a4ff98ded4d93bcbccf7,
         type: 3}
